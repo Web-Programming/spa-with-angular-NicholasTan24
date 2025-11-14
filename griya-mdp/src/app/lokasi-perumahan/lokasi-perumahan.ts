@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-lokasi-perumahan',
-  imports: [],
+  standalone: true,
   templateUrl: './lokasi-perumahan.html',
-  styleUrl: './lokasi-perumahan.css',
+  styleUrls: ['./lokasi-perumahan.css'],
 })
 export class LokasiPerumahan {
-
+  @Input() numbers!: number;
 }

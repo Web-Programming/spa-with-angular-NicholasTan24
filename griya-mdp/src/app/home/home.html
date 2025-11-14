@@ -1,3 +1,7 @@
 <h1>Perumahan Impian Semua Insan</h1>
-<!-- memanggil object di lokasi perumahan -->
-<div *ngFor="let num of numbers; track num">{{ num }}</div>
+
+<div class="card-container">
+  @for (rumah of rumahList; track rumah) {
+    <app-lokasi-perumahan [numbers]="rumah"></app-lokasi-perumahan>
+  }
+</div>
