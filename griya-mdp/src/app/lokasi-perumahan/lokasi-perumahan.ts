@@ -1,11 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-lokasi-perumahan',
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './lokasi-perumahan.html',
-  styleUrls: ['./lokasi-perumahan.css'],
+  styleUrl: './lokasi-perumahan.css'
 })
 export class LokasiPerumahan {
-  @Input() numbers!: number;
+  // Nanti bisa ditambahkan @Input() untuk menerima data dari parent
 }
