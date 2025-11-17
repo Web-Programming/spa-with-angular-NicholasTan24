@@ -109,6 +109,7 @@ export class Home implements OnInit {
   selectedFilter: string = 'all';
 
   ngOnInit() {
+    // dia akan mengisi semua data aslinya
     // Initialize filtered list with all housing
     this.filteredList = [...this.housingList];
   }
