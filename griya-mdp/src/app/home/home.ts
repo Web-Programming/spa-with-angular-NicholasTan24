@@ -3,9 +3,9 @@ import { RouterLink } from '@angular/router';
 import { LokasiPerumahan } from '../lokasi-perumahan/lokasi-perumahan';
 import { Housing } from '../lokasi-perumahan/housing.model';
 import { CommonModule } from '@angular/common';
-import { HOUSING_DATA } from '../data/housing-data';
 import { HousingService } from '../services/housing';  // ← Import service
 import { FormsModule } from '@angular/forms';  // ← Untuk search
+import { HOUSING_DATA } from '../data/housing-data';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +15,7 @@ import { FormsModule } from '@angular/forms';  // ← Untuk search
 })
 export class Home implements OnInit {
   // Array untuk data perumahan (bisa diisi dari backend nanti)
-  housingList: Housing[] = HOUSING_DATA;
+  housingList: Housing[] = [];
   filteredList: Housing[] = [];
 
   // State management

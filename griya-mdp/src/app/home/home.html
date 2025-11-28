@@ -222,15 +222,7 @@
     <p class="text-muted mt-3">Memuat data properti...</p>
   </div>
 </div>
-
-<!-- Housing Cards Grid -->
-<div class="row g-4 mb-4" *ngIf="!isLoading">
-  <div class="col-md-6 col-lg-4" *ngFor="let house of filteredList">
-    <app-lokasi-perumahan [housing]="house"></app-lokasi-perumahan>
-  </div>
-
   
-</div>
 <!-- Search Bar -->
 <div class="row justify-content-center mb-4">
   <div class="col-lg-8">
